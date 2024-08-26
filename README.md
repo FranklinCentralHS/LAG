@@ -1,16 +1,27 @@
 # Platformer Project
-insert description here
+Platformer Project with a 2D platformer game. 
 
 
 ## Team Members
-### fchsLemke - Mr. Lemke
-### GMolter - Gavin Molter
-### LPenney33 - Luke Penney 
-set up repo with readme, git config, and empty project files
-### [Now add each collaborator the same way]
-* [and their contributions]
-* [using this format if you want bullets]
+* fchsLemke - Mr. Lemke
+* GMolter - Gavin Molter
+* LPenney33 - Luke Penney 
+* Boggedr - Ashton Johnson
 
+### Gavin's Contributions
+* [Add your contributions here]
+* [Add your contributions here]
+* [Add your contributions here]
+
+### Luke's Contributions
+* [Add your contributions here]
+* [Add your contributions here]
+* [Add your contributions here]
+
+### Ashton's Contributions
+* [Add your contributions here]
+* [Add your contributions here]
+* [Add your contributions here]
 
 ## Reflections
 
