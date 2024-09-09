@@ -1,50 +1,55 @@
 extends CharacterBody2D
 
-
 const SPEED = 130.0
 const JUMP_VELOCITY = -300.0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
+# Check if player can double-jump
+var can_double_jump = false
+
 @onready var animated_sprite = $AnimatedSprite2D
 
 func _physics_process(delta):
-	# Add the gravity.
-	if not is_on_floor():
-		velocity.y += gravity * delta
+    # Add the gravity.
+    if not is_on_floor():
+        velocity.y += gravity * delta
 
-	# Handle jump.
-	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
+    # Reset double jump when on the floor
+    if is_on_floor():
+        can_double_jump = true
 
-	# Get the input direction: -1 is left, 1 is right.
-	var direction = Input.get_axis("move_left", "move_right")
+    # Handle jump.
+    if Input.is_action_just_pressed("jump"):
+        if is_on_floor():
+            velocity.y = JUMP_VELOCITY
+        elif can_double_jump:
+            velocity.y = JUMP_VELOCITY
+            can_double_jump = false
 
-	#Flip the sprite
-	if direction > 0:
-		animated_sprite.flip_h = false
-	elif direction < 0:
-		animated_sprite.flip_h = true
+    # Get the input direction: -1 is left, 1 is right.
+    var direction = Input.get_axis("move_left", "move_right")
 
-	#Play the animation
-	if is_on_floor():
-		if direction == 0:
-			animated_sprite.play("idle")
-		else:
-			animated_sprite.play("run")
-	else:
-		animated_sprite.play("jump")
+    # Flip the sprite
+    if direction > 0:
+        animated_sprite.flip_h = false
+    elif direction < 0:
+        animated_sprite.flip_h = true
 
+    # Play the animation
+    if is_on_floor():
+        if direction == 0:
+            animated_sprite.play("idle")
+        else:
+            animated_sprite.play("run")
+    else:
+        animated_sprite.play("jump")
 
-	
+    # Apply the movement.
+    if direction:
+        velocity.x = direction * SPEED
+    else:
+        velocity.x = move_toward(velocity.x, 0, SPEED)
 
-
-	#Apply the movement.
-	if direction:
-		velocity.x = direction * SPEED
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-
-	move_and_slide()
-
+    move_and_slide()
