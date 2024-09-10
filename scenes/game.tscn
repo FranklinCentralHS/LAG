@@ -458,6 +458,21 @@ _data = {
 "move": SubResource("Animation_vphdg")
 }
 
+[sub_resource type="Animation" id="Animation_ro23l"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1821, 40)]
+}
+
 [sub_resource type="Animation" id="Animation_kxd7g"]
 resource_name = "move"
 length = 4.0
@@ -475,7 +490,13 @@ tracks/0/keys = {
 "values": [Vector2(1821, 40), Vector2(1821, 40), Vector2(1927, 40), Vector2(1927, 40)]
 }
 
-[sub_resource type="Animation" id="Animation_ro23l"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qfja0"]
+_data = {
+"RESET": SubResource("Animation_ro23l"),
+"move": SubResource("Animation_kxd7g")
+}
+
+[sub_resource type="Animation" id="Animation_phr25"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -487,13 +508,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(1821, 40)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_qfja0"]
-_data = {
-"RESET": SubResource("Animation_ro23l"),
-"move": SubResource("Animation_kxd7g")
+"values": [Vector2(1960, -89)]
 }
 
 [sub_resource type="Animation" id="Animation_c6qi5"]
@@ -513,29 +528,14 @@ tracks/0/keys = {
 "values": [Vector2(1960, -89), Vector2(1960, -89), Vector2(2028, -89), Vector2(2028, -89)]
 }
 
-[sub_resource type="Animation" id="Animation_phr25"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1960, -89)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_8wa5o"]
 _data = {
 "RESET": SubResource("Animation_phr25"),
 "move": SubResource("Animation_c6qi5")
 }
 
-[sub_resource type="Animation" id="Animation_hfwqh"]
-resource_name = "move"
+[sub_resource type="Animation" id="Animation_28607"]
+loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -549,8 +549,8 @@ tracks/0/keys = {
 "values": [Vector2(2740, 159), Vector2(2740, 52)]
 }
 
-[sub_resource type="Animation" id="Animation_28607"]
-loop_mode = 2
+[sub_resource type="Animation" id="Animation_hfwqh"]
+resource_name = "move"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -570,8 +570,8 @@ _data = {
 "move": SubResource("Animation_hfwqh")
 }
 
-[sub_resource type="Animation" id="Animation_qqcb6"]
-resource_name = "move"
+[sub_resource type="Animation" id="Animation_0nd1q"]
+loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -585,8 +585,8 @@ tracks/0/keys = {
 "values": [Vector2(2791, 52), Vector2(2791, 159)]
 }
 
-[sub_resource type="Animation" id="Animation_0nd1q"]
-loop_mode = 2
+[sub_resource type="Animation" id="Animation_qqcb6"]
+resource_name = "move"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -606,8 +606,8 @@ _data = {
 "move": SubResource("Animation_qqcb6")
 }
 
-[sub_resource type="Animation" id="Animation_opwoc"]
-resource_name = "move"
+[sub_resource type="Animation" id="Animation_3woyd"]
+loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -621,8 +621,8 @@ tracks/0/keys = {
 "values": [Vector2(2848, 159), Vector2(2848, 52)]
 }
 
-[sub_resource type="Animation" id="Animation_3woyd"]
-loop_mode = 2
+[sub_resource type="Animation" id="Animation_opwoc"]
+resource_name = "move"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -642,21 +642,6 @@ _data = {
 "move": SubResource("Animation_opwoc")
 }
 
-[sub_resource type="Animation" id="Animation_2nii0"]
-resource_name = "move"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(2900, 52)]
-}
-
 [sub_resource type="Animation" id="Animation_foyyr"]
 loop_mode = 2
 tracks/0/type = "value"
@@ -672,10 +657,40 @@ tracks/0/keys = {
 "values": [Vector2(2900, 52), Vector2(2900, 159)]
 }
 
+[sub_resource type="Animation" id="Animation_2nii0"]
+resource_name = "move"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2900, 52)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_u54rv"]
 _data = {
 "RESET": SubResource("Animation_foyyr"),
 "move": SubResource("Animation_2nii0")
+}
+
+[sub_resource type="Animation" id="Animation_ak60h"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2952, 116)]
 }
 
 [sub_resource type="Animation" id="Animation_glkhq"]
@@ -695,7 +710,13 @@ tracks/0/keys = {
 "values": [Vector2(2952, 116), Vector2(3000, 77), Vector2(3043, 116), Vector2(3000, 138), Vector2(2952, 116)]
 }
 
-[sub_resource type="Animation" id="Animation_ak60h"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xxh2k"]
+_data = {
+"RESET": SubResource("Animation_ak60h"),
+"move": SubResource("Animation_glkhq")
+}
+
+[sub_resource type="Animation" id="Animation_b2ttd"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -707,13 +728,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(2952, 116)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_xxh2k"]
-_data = {
-"RESET": SubResource("Animation_ak60h"),
-"move": SubResource("Animation_glkhq")
+"values": [Vector2(3617, 69)]
 }
 
 [sub_resource type="Animation" id="Animation_eaatv"]
@@ -733,28 +748,13 @@ tracks/0/keys = {
 "values": [Vector2(3617, 69), Vector2(3617, 69), Vector2(3808, 69), Vector2(3808, 69)]
 }
 
-[sub_resource type="Animation" id="Animation_b2ttd"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(3617, 69)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3a1hj"]
 _data = {
 "RESET": SubResource("Animation_b2ttd"),
 "move": SubResource("Animation_eaatv")
 }
 
-[node name="Game" type="Node2D"]
+[node name="GameLevel1" type="Node2D"]
 position = Vector2(1, 0)
 
 [node name="GameManager" type="Node" parent="."]
@@ -770,6 +770,45 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_73wfv")
 theme_override_font_sizes/font_size = 8
 text = "You Got X/37 coins!"
+
+[node name="WinLabel" type="Label" parent="GameManager"]
+offset_left = 3763.0
+offset_top = -35.0
+offset_right = 4004.0
+offset_bottom = -5.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_6st5o")
+theme_override_font_sizes/font_size = 8
+text = "You got all the coins! Your
+bottle is so proud of you!
+Press \"P\" to move on to the next level!"
+horizontal_alignment = 1
+
+[node name="WinLabel2" type="Label" parent="GameManager"]
+offset_left = 3775.0
+offset_top = -42.0
+offset_right = 4002.0
+offset_bottom = -1.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_6st5o")
+theme_override_font_sizes/font_size = 8
+text = "You didn't get enough coins
+ to convince your bottle to
+ come home, try to get 
+more coins..."
+horizontal_alignment = 1
+
+[node name="LoseLabel" type="Label" parent="GameManager"]
+offset_left = 3773.0
+offset_top = -21.0
+offset_right = 4000.0
+offset_bottom = 20.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_6st5o")
+theme_override_font_sizes/font_size = 8
+text = "Wow you got.. no coins? I guess 
+good job?"
+horizontal_alignment = 1
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_pvyeu")
@@ -894,7 +933,7 @@ position = Vector2(2848, 99)
 position = Vector2(2901, 98)
 
 [node name="coin32" parent="Coins" instance=ExtResource("4_olq48")]
-position = Vector2(3044, 99)
+position = Vector2(3173, 98)
 
 [node name="coin33" parent="Coins" instance=ExtResource("4_olq48")]
 position = Vector2(2992, 66)
@@ -1022,7 +1061,6 @@ autoplay = "move"
 position = Vector2(3617, 69)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platforms/desertplatform6"]
-root_node = NodePath("../../desertplatform6")
 libraries = {
 "": SubResource("AnimationLibrary_3a1hj")
 }
@@ -1056,17 +1094,6 @@ theme_override_colors/font_color = Color(0, 0.158756, 0.831092, 1)
 theme_override_fonts/font = ExtResource("9_6st5o")
 theme_override_font_sizes/font_size = 8
 text = "Watch your step..."
-
-[node name="Label2" type="Label" parent="Labels"]
-offset_left = 3805.0
-offset_top = -21.0
-offset_right = 3968.0
-offset_bottom = -2.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("9_6st5o")
-theme_override_font_sizes/font_size = 8
-text = "Congradulations! You got
-your favorite bottle back!"
 
 [node name="Label3" type="Label" parent="Labels"]
 offset_left = 241.0
