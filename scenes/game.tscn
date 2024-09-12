@@ -1,6 +1,7 @@
-[gd_scene load_steps=43 format=3 uid="uid://d2iabom4wgnf2"]
+[gd_scene load_steps=44 format=3 uid="uid://d2iabom4wgnf2"]
 
 [ext_resource type="Texture2D" uid="uid://c1q1pox0xtf4a" path="res://assets/sprites/world_tileset.png" id="1_2kfkc"]
+[ext_resource type="Script" path="res://scripts/change_level.gd" id="1_iiucn"]
 [ext_resource type="PackedScene" uid="uid://caog723lypujy" path="res://scenes/player.tscn" id="1_kk8rb"]
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_vnqky"]
 [ext_resource type="FontFile" uid="uid://y85kign6thw3" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="2_73wfv"]
@@ -756,6 +757,12 @@ _data = {
 
 [node name="GameLevel1" type="Node2D"]
 position = Vector2(1, 0)
+
+[node name="ChangeLevel" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("1_iiucn")
+
+[node name="GameManager2" type="Node" parent="."]
 
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
