@@ -609,6 +609,10 @@ _data = {
 
 [node name="GameLevel2" type="Node2D"]
 
+[node name="ChangeLevel" type="Node" parent="."]
+
+[node name="GameManager2" type="Node" parent="."]
+
 [node name="Player" parent="." instance=ExtResource("1_7qedd")]
 position = Vector2(29, -4)
 

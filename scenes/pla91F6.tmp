@@ -194,5 +194,3 @@ target_position = Vector2(-10, 0)
 [node name="RayCast2DRight" type="RayCast2D" parent="."]
 position = Vector2(0, -5)
 target_position = Vector2(10, 0)
-
-[node name="Timer" type="Timer" parent="."]
