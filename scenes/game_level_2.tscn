@@ -545,6 +545,22 @@ size = Vector2(16, 8)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uu3ns"]
 size = Vector2(626, 490)
 
+[sub_resource type="Animation" id="Animation_s1let"]
+resource_name = "FinalPlat"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(3455.31, -152), Vector2(3616.31, -152)]
+}
+
 [sub_resource type="Animation" id="Animation_crpug"]
 length = 12.0
 loop_mode = 2
@@ -582,22 +598,6 @@ tracks/0/keys = {
 resource_name = "skinb"
 length = 5.0
 loop_mode = 1
-
-[sub_resource type="Animation" id="Animation_s1let"]
-resource_name = "FinalPlat"
-loop_mode = 2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(3455.31, -152), Vector2(3616.31, -152)]
-}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ukgi4"]
 _data = {
@@ -764,3 +764,63 @@ libraries = {
 }
 autoplay = "RESET"
 speed_scale = 1.721
+
+[node name="coin9" parent="." instance=ExtResource("6_i0p45")]
+position = Vector2(1129, -185)
+
+[node name="coin10" parent="." instance=ExtResource("6_i0p45")]
+position = Vector2(1227, -201)
+
+[node name="coin11" parent="." instance=ExtResource("6_i0p45")]
+position = Vector2(1321, -202)
+
+[node name="coin12" parent="." instance=ExtResource("6_i0p45")]
+position = Vector2(1512, -201)
+
+[node name="coin13" parent="." instance=ExtResource("6_i0p45")]
+position = Vector2(1617, -186)
+
+[node name="coin14" parent="." instance=ExtResource("6_i0p45")]
+position = Vector2(1867, -188)
+
+[node name="coin15" parent="." instance=ExtResource("6_i0p45")]
+position = Vector2(2680, -188)
+
+[node name="coin16" parent="." instance=ExtResource("6_i0p45")]
+position = Vector2(2712, -188)
+
+[node name="coin17" parent="." instance=ExtResource("6_i0p45")]
+position = Vector2(2250, -188)
+
+[node name="coin18" parent="." instance=ExtResource("6_i0p45")]
+position = Vector2(2938, -160)
+
+[node name="coin19" parent="." instance=ExtResource("6_i0p45")]
+position = Vector2(2937, -88)
+
+[node name="coin20" parent="." instance=ExtResource("6_i0p45")]
+position = Vector2(2937, -16)
+
+[node name="coin21" parent="." instance=ExtResource("6_i0p45")]
+position = Vector2(3152, 89)
+
+[node name="coin22" parent="." instance=ExtResource("6_i0p45")]
+position = Vector2(3296, -23)
+
+[node name="coin23" parent="." instance=ExtResource("6_i0p45")]
+position = Vector2(3350, -72)
+
+[node name="coin24" parent="." instance=ExtResource("6_i0p45")]
+position = Vector2(3290, -120)
+
+[node name="coin25" parent="." instance=ExtResource("6_i0p45")]
+position = Vector2(3400, -173)
+
+[node name="coin26" parent="." instance=ExtResource("6_i0p45")]
+position = Vector2(2467, -188)
+
+[node name="coin27" parent="." instance=ExtResource("6_i0p45")]
+position = Vector2(2352, -188)
+
+[node name="coin28" parent="." instance=ExtResource("6_i0p45")]
+position = Vector2(2575, -188)
