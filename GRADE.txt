@@ -1,0 +1,19 @@
+Team Points:
+  20/20 points for a working platformer with a filled out README
+  10/20 points for having enough sizable changes (4 changes if in a group of 1, 5 changes if in a group of 2, 6 changes if in a group of 3, 8 changes if in a group of 4)
+  2/10 points for following the PR process correctly, including reviewing your teammates’ code (not required for solo projects, instead points will come from having enough changes)
+  -you made commits, but didn't use any PR's
+
+32/50
+
+Individual Points:
+  10 points for contributing features to your game (no hard carries)
+  -7/10 Luke
+  -5/10 Ashton
+  -10/10 Gavin
+  You guys stretch my generousity. I said I wanted more than just more levels.
+  5 points for thoughtful reflection added in the README
+  -3/5 Luke
+  -3/5 Ashton
+  -5/5 Gavin
+  0/5 points for contributing to code reviews in PR’s (not required for solo projects, instead points will come from your reflection)
